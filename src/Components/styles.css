@@ -1,0 +1,85 @@
+.main-container {
+  min-height: 90vh;
+  min-width: 90vw;
+  background-color: #fff;
+  border: solid 2px #ffd8ec;
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 1em 0em #ffd8ec;
+}
+
+.fullLogo {
+  max-height: 512px;
+}
+.sidebar-container {
+  background-color: #ffd8ec;
+  border-right: solid 1px #ffd8ec;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.workArea-container {
+  border-left: solid 1px #ffd8ec;
+  flex: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sb-header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px 5px;
+  margin: 10px;
+}
+.sb-search {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px 5px;
+  margin: 10px;
+  display: flex;
+}
+.sb-conversations {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px 5px;
+  margin: 10px;
+  flex: 1;
+}
+
+.searchBox {
+  outline-width: 0;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.conversation-image {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.conversation-item {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.conversation-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.conversation-info {
+  flex: 2;
+  padding-left: 8px;
+}
+
+.conversation-timeStamp {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
