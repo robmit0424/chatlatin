@@ -1,13 +1,12 @@
 import React from "react";
-import "./styles.css";
 import FullLogo from "./assets/ChatLatin-Full.png";
 
-function WorkArea() {
+function ChatArea() {
   return (
-    <div className="workArea-container">
+    <div className="chat-area">
       <img className="fullLogo" src={FullLogo} alt="Logo" />
     </div>
   );
 }
 
-export default WorkArea;
+export default ChatArea;

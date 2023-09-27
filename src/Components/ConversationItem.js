@@ -4,7 +4,7 @@ import logo from "./assets/ChatLatin-Icon.png";
 
 function ConversationItem({ props }) {
   return (
-    <div className="conversation-item" key={props.UID}>
+    <div className="conversation-item" key={props.UUID}>
       <img className="conversation-image" src={logo} alt="pig" />
       <div className="conversation-info">
         <div className="conversation-name">{props.name}</div>

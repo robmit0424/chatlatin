@@ -1,13 +1,19 @@
 import React from "react";
 import "./styles.css";
 import Sidebar from "./Sidebar";
-import WorkArea from "./WorkArea";
+import ChatHeader from "./ChatHeader";
+import ChatArea from "./ChatArea";
+import ChatSendArea from "./ChatSendArea";
 
 function MainContainer() {
   return (
     <div className="main-container">
       <Sidebar />
-      <WorkArea />
+      <div className="workArea-container">
+        <ChatHeader />
+        <ChatArea />
+        <ChatSendArea />
+      </div>
     </div>
   );
 }
