@@ -12,16 +12,19 @@ import ConversationItem from "./ConversationItem";
 function Sidebar() {
   const [conversations, setConversations] = useState([
     {
+      UUID: 1,
       name: "Jake",
       lastMessage: "WTF Bro?!?!?!",
       timeStamp: "Today",
     },
     {
+      UUID: 2,
       name: "Eric",
       lastMessage: "Fuck you",
       timeStamp: "Yesterday",
     },
     {
+      UUID: 3,
       name: "Zack",
       lastMessage: "*1 image attached*",
       timeStamp: "2 days ago",
