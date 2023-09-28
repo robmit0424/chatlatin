@@ -11,7 +11,7 @@ function ChatHeader() {
         <p className="chat-header-name">Eric</p>
       </div>
       <IconButton>
-        <DeleteIcon />
+        <DeleteIcon style={{ fill: "#e75f86" }} />
       </IconButton>
     </div>
   );

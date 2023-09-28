@@ -5,9 +5,9 @@ import { IconButton } from "@mui/material";
 function ChatSendArea() {
   return (
     <div className="chat-send-area">
-      <input placeholder="Search" className="chat-box" />
+      <input placeholder="Send Message" className="chat-box" />
       <IconButton>
-        <SendIcon />
+        <SendIcon style={{ fill: "#e75f86" }} />
       </IconButton>
     </div>
   );
