@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FullLogo from "./assets/ChatLatin-Full.png";
 import MessageSelf from "./MessageSelf";
 import MessageOthers from "./MessageOthers";
+import Welcome from "./Welcome";
 
 function ChatArea() {
   const [allMessages, setAllMessages] = useState([
@@ -17,17 +18,13 @@ function ChatArea() {
   ]);
   return (
     <div className="chat-area">
-      {!allMessages.length ? (
-        <img className="fullLogo" src={FullLogo} alt="Logo" />
-      ) : (
-        allMessages.map((message) => {
-          return message.sentBy === "me" ? (
-            <MessageSelf message={message.message} />
-          ) : (
-            <MessageOthers props={message} />
-          );
-        })
-      )}
+      {allMessages.map((message) => {
+        return message.sentBy === "me" ? (
+          <MessageSelf message={message.message} />
+        ) : (
+          <MessageOthers props={message} />
+        );
+      })}
     </div>
   );
 }

@@ -4,6 +4,8 @@ import Sidebar from "./Sidebar";
 import ChatHeader from "./ChatHeader";
 import ChatArea from "./ChatArea";
 import ChatSendArea from "./ChatSendArea";
+import Welcome from "./Welcome";
+import CreateGroup from "./CreateGroup";
 
 function MainContainer() {
   return (
@@ -14,6 +16,8 @@ function MainContainer() {
         <ChatArea />
         <ChatSendArea />
       </div>
+      {/* <Welcome /> */}
+      {/* <CreateGroup /> */}
     </div>
   );
 }
