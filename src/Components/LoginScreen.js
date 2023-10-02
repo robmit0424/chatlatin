@@ -1,8 +1,10 @@
 import React from "react";
 import FullLogo from "./assets/ChatLatin-Full.png";
 import { Button, TextField, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function LoginScreen() {
+  const navigate = useNavigate();
   return (
     <div className="login-screen-container">
       <div className="login-screen-directions">
@@ -25,7 +27,12 @@ function LoginScreen() {
           />
           <div className="login-form-buttons">
             <Button variant="contained">Sign Up</Button>
-            <Button variant="contained">Login</Button>
+            <Button
+              variant="contained"
+              onClick={() => navigate("/app/welcome")}
+            >
+              Login
+            </Button>
           </div>
         </div>
       </div>

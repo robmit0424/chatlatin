@@ -7,19 +7,14 @@ import ChatSendArea from "./ChatSendArea";
 import Welcome from "./Welcome";
 import CreateGroup from "./CreateGroup";
 import LoginScreen from "./LoginScreen";
+import { Outlet, Route, Routes } from "react-router-dom";
+import ChatScreen from "./ChatScreen";
 
 function MainContainer() {
   return (
     <div className="main-container">
-      {/* <LoginScreen /> */}
       <Sidebar />
-      {/* <div className="workArea-container">
-        <ChatHeader />
-        <ChatArea />
-        <ChatSendArea />
-      </div> */}
-      <Welcome />
-      {/* <CreateGroup /> */}
+      <Outlet />
     </div>
   );
 }

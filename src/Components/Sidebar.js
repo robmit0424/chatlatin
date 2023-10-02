@@ -8,6 +8,7 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import "./styles.css";
 import { IconButton } from "@mui/material";
 import ConversationItem from "./ConversationItem";
+import { useNavigate } from "react-router-dom";
 
 function Sidebar() {
   const [conversations, setConversations] = useState([
@@ -30,6 +31,8 @@ function Sidebar() {
       timeStamp: "2 days ago",
     },
   ]);
+
+  const navigate = useNavigate();
   return (
     <div className="sidebar-container">
       <div className="sb-header">
@@ -43,7 +46,10 @@ function Sidebar() {
             <PersonAddAlt1OutlinedIcon style={{ fill: "#e75f86" }} />
           </IconButton>
           <IconButton>
-            <GroupAddOutlinedIcon style={{ fill: "#e75f86" }} />
+            <GroupAddOutlinedIcon
+              onClick={() => navigate("/app/groups")}
+              style={{ fill: "#e75f86" }}
+            />
           </IconButton>
           <IconButton>
             <AddCircleOutlineOutlinedIcon style={{ fill: "#e75f86" }} />
