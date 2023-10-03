@@ -42,7 +42,7 @@ function Sidebar() {
           </IconButton>
         </div>
         <div>
-          <IconButton>
+          <IconButton onClick={() => navigate("/app/add-friend")}>
             <PersonAddAlt1OutlinedIcon style={{ fill: "#e75f86" }} />
           </IconButton>
           <IconButton>

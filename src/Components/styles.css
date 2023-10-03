@@ -58,9 +58,14 @@
 }
 
 .conversation-item {
-  padding: 4px;
+  padding: 12px 8px;
   display: flex;
   align-items: center;
+}
+
+.conversation-item:hover {
+  background-color: #ffd8ec;
+  border-radius: 12px;
 }
 
 .conversation-name {
@@ -251,4 +256,40 @@
 }
 
 .login-form-buttons {
+}
+
+.add-friends-container {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 16px;
+}
+
+.add-friends-input {
+  outline-width: 0;
+  border: none;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.add-friends-input-container {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 10px;
+  flex: 1;
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  border: none;
+}
+
+.add-friends-list-container {
+  width: 100%;
+  flex: 13;
+  background-color: white;
+  padding: 10px 5px;
+  margin: 10px;
+  border-radius: 20px;
 }

@@ -5,6 +5,7 @@ import LoginScreen from "./Components/LoginScreen";
 import Welcome from "./Components/Welcome";
 import ChatScreen from "./Components/ChatScreen";
 import CreateGroup from "./Components/CreateGroup";
+import AddFriendsArea from "./Components/AddFriendsArea";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="welcome" element={<Welcome />} />
           <Route path="chat" element={<ChatScreen />} />
           <Route path="groups" element={<CreateGroup />} />
+          <Route path="add-friend" element={<AddFriendsArea />} />
         </Route>
       </Routes>
     </div>

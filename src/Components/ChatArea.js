@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import FullLogo from "./assets/ChatLatin-Full.png";
 import MessageSelf from "./MessageSelf";
 import MessageOthers from "./MessageOthers";
-import Welcome from "./Welcome";
 
 function ChatArea() {
   const [allMessages, setAllMessages] = useState([
